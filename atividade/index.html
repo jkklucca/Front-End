@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmeiras - Central Interativa 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 id="titulo">Sociedade Esportiva Palmeiras</h1>
+            <p class="subtitle">Página criada com HTML5, CSS3 e JavaScript.</p>
+        </div>
+    </header>
+
+    <nav class="nav-tabs">
+        <button class="tab-btn active" onclick="trocarAba('sobre')">Sobre</button>
+        <button class="tab-btn" onclick="trocarAba('trofeus')">Troféus</button>
+        <button class="tab-btn" onclick="trocarAba('logos')">Logos Antigos</button>
+        <button class="tab-btn" onclick="trocarAba('elenco')">Elenco 2026</button>
+    </nav>
+
+    <main>
+        <!-- ABA SOBRE -->
+        <section id="sobre" class="tab-content active">
+            <h2>Sobre o Tema</h2>
+            <p id="descricao">Clique no botão para conhecer mais sobre a gloriosa história do Verdão.</p>
+            <div class="actions">
+                <button class="action-btn btn-success" onclick="mostrarMensagem()">Saiba Mais</button>
+                <button class="action-btn btn-secondary" onclick="mudarCor()">Mudar Cor de Fundo</button>
+            </div>
+        </section>
+
+        <!-- ABA TROFÉUS -->
+        <section id="trofeus" class="tab-content">
+            <h2>Galeria de Conquistas</h2>
+            <p class="section-intro">Os principais títulos que consagram o Palmeiras como o Maior Campeão do Brasil.</p>
+            <div class="grid-container">
+                <div class="card media-card">
+                    <img src="img/br.jpg" alt="Taça do Brasileirão" class="card-img">
+                    <h3>Campeonato Brasileiro</h3>
+                    <p class="badge">12 Títulos</p>
+                </div>
+                <div class="card media-card">
+                    <img src="img/libertadores.png" alt="Taça da Libertadores" class="card-img">
+                    <h3>Copa Libertadores</h3>
+                    <p class="badge">3 Títulos</p>
+                </div>
+                <div class="card media-card">
+                    <img src="img/copa.jpg" alt="Taça da Copa do Brasil" class="card-img">
+                    <h3>Copa do Brasil</h3>
+                    <p class="badge">4 Títulos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABA LOGOS ANTIGOS -->
+        <section id="logos" class="tab-content">
+            <h2>Evolução da Identidade</h2>
+            <p class="section-intro">Emblemas históricos marcantes desde a nossa fundação.</p>
+            <div class="grid-container">
+                <div class="card media-card">
+                    <img src="img/Italia.png" alt="Escudo Palestra Italia 1914" class="card-img logo-fit">
+                    <h3>Palestra Italia (1914)</h3>
+                    <p>O primeiro escudo oficial com o vermelho da Casa de Saboia.</p>
+                </div>
+                <div class="card media-card">
+                    <img src="img/São Paulo.png" alt="Escudo Palestra Italia 1942" class="card-img logo-fit">
+                    <h3>Palestra Italia (1942)</h3>
+                    <p>A transição histórica adotando a tradicional letra P.</p>
+                </div>
+                <div class="card media-card">
+                    <img src="img/palmeiras.png" alt="Escudo Palmeiras Atual" class="card-img logo-fit">
+                    <h3>Palmeiras (Atual)</h3>
+                    <p>O escudo consagrado com as 8 estrelas e as linhas tradicionais.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABA ELENCO 2026 -->
+        <section id="elenco" class="tab-content">
+            <h2>Elenco Principal (Temporada 2026)</h2>
+            <div class="coach-container">
+                <div class="card coach-card">
+                    <img src="img/abel.jpg" alt="Abel Ferreira" class="coach-img">
+                    <div>
+                        <h3>Abel Ferreira</h3>
+                        <p class="badge">Técnico / Comandante</p>
+                        <p class="coach-desc">O maior treinador da história do clube liderando a equipe em busca de novas glórias em 2026.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container" id="jogadores-container">
+                <!-- Inserido dinamicamente via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: Lucca Volpi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
