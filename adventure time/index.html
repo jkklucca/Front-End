@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Galeria Animada</title>
+    <!-- Vincula o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Minha Galeria Animada</h1>
+    <p>Escolha uma fotografia:</p>
+
+    <!-- Área de exibição da imagem com bordas arredondadas -->
+    <div class="galeria-container">
+        <!-- Define a foto inicial puxando da sua pasta img -->
+        <img id="fotoExibida" class="foto-principal" src="img/Finn.jpg" alt="Foto da Galeria">
+    </div>
+
+    <!-- Mude as cores abaixo para os tons que você preferir! -->
+    <div class="navegacao">
+        <button class="botao-foto" onclick="mudarFoto('img/Finn.jpg', '#d1e707')">Foto 1</button>
+        <button class="botao-foto" onclick="mudarFoto('img/Jake.png', '#ff9100')">Foto 2</button> <!-- Exemplo: Laranja -->
+        <button class="botao-foto" onclick="mudarFoto('img/finn e jake.png', '#00e5ff')">Foto 3</button> <!-- Exemplo: Ciano -->
+    </div>
+
+    <!-- Vincula o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
