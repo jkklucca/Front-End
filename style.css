@@ -1,0 +1,70 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #048ce7; /* Cor inicial padrão */
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.6s ease; /* Faz a mudança de cor do fundo ser suave */
+}
+
+h1 {
+    color: #f8f8f8;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Container da Foto Principal */
+.galeria-container {
+    width: 320px;
+    height: 400px;
+    margin: 0 auto 30px auto;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden; /* Mantém o zoom dentro dos limites da borda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #d1e707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Garante o encaixe perfeito da cor de fundo */
+}
+
+/* Imagem com efeito de transição */
+.foto-principal {
+    width: 90%;
+    height: 90%;
+    object-fit: contain; /* Garante que a imagem inteira caiba perfeitamente sem cortes */
+    transition: transform 0.4s ease; /* Controla a velocidade do zoom */
+}
+
+/* Efeito de Ampliação ao passar o mouse */
+.galeria-container:hover .foto-principal {
+    transform: scale(1.1); /* Amplia a imagem de forma segura dentro do espaço */
+}
+
+/* Menu de Navegação inferior */
+.navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botao-foto {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.botao-foto:hover {
+    color: #c4c4c4;
+}
