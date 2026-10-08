@@ -1,0 +1,105 @@
+body {
+    background-color: #5e0101;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #f70d0d; 
+    padding: 30px;
+    border-radius: 20px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Organiza os campos um embaixo do outro */
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #111;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccd0d5;
+    border-radius: 8px; 
+    background-color: #ffffff;
+    color: #333;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #8d949e;
+}
+
+input:focus {
+    border: 1px solid #333;
+    outline: none;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #1c2d37; 
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #111b21;
+}
+
+#mensagem {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Centraliza o título Cadastro Pessoal */
+h2 {
+    color: #333;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.foto {
+    display: block;
+    margin: 0 auto;        
+    width: 180px;           
+    height: 180px;          
+    object-fit: cover;       
+    border-radius: 50%;      
+    border: 5px solid #333;  
+    box-shadow: 0 0 10px gray; 
+    transition: transform 0.5s; 
+}
+
+.foto:hover {
+    transform: scale(1.1);  
+}
