@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #334155;
+}
+
+.topo {
+    background: #123b63;
+    color: white;
+    border-bottom: 5px solid #25b6a4;
+    padding: 20px 0;
+}
+
+.topo h1 {
+    margin: 0;
+}
+
+.topo p {
+    margin: 5px 0 0 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.painel {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(20, 55, 80, 0.09);
+}
+
+h2 {
+    color: #123b63;
+    padding-bottom: 12px;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdcbd5;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: 2px solid #25b6a4;
+}
+
+input[type="file"] {
+    background: #f7fafc;
+    padding: 6px;
+}
+
+#previewFoto {
+    display: none;
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 15px;
+    border: 2px solid #25b6a4;
+}
+
+.botoes {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #087f8c;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #06616b;
+}
+
+button.secundario {
+    margin-left: 8px;
+    background: #64748b;
+}
+
+button.secundario:hover {
+    background: #475569;
+}
+
+.registro {
+    border: 1px solid #dce8ef;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.registro img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+button.excluir {
+    background: #ef4444;
+    padding: 8px 12px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+button.excluir:hover {
+    background: #dc2626;
+}
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 40px;
+    padding: 20px 0;
+}

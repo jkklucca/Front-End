@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta - Cadastro de Pacientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="container">
+            <h1>✚ Consulta</h1>
+            <p>Sistema de Cadastro de Pacientes</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Exibição de Mensagens de Status -->
+        <div id="mensagem" style="font-weight: bold; margin-bottom: 15px; color: #087f8c;"></div>
+
+        <section class="painel">
+            <p>Preencha os dados para cadastrar um paciente.</p>
+            <form id="formPaciente">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+
+                <label for="naturalidade">Naturalidade (cidade/UF):</label>
+                <input type="text" id="naturalidade" required>
+
+                <label for="foto">Foto do paciente:</label>
+                <input type="file" id="foto" accept="image/*">
+                
+                <img id="previewFoto" alt="Prévia da foto do paciente">
+
+                <div class="botoes">
+                    <button type="submit">Salvar cadastro</button>
+                    <button type="reset" id="btnLimpar" class="secundario">Limpar formulário</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="painel" style="margin-top: 30px;">
+            <h2>Pacientes cadastrados</h2>
+            <div id="listaPacientes">
+                Nenhum paciente cadastrado.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="container">Consulta | Projeto educacional de HTML5, CSS3 e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
