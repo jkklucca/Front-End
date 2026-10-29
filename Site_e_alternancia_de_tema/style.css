@@ -1,0 +1,126 @@
+/* Variáveis de Cores para o Tema (Tema Claro Padrão) */
+:root {
+    --bg-primary: #f4f6f9;
+    --bg-card: #ffffff;
+    --text-color: #333333;
+    --accent-color: #0056b3;
+    --footer-bg: #1e293b;
+    --footer-text: #ffffff;
+}
+
+/* Modificadores para o Tema Escuro */
+[data-theme="dark"] {
+    --bg-primary: #121212;
+    --bg-card: #1e1e1e;
+    --text-color: #e0e0e0;
+    --accent-color: #3b82f6;
+    --footer-bg: #0f172a;
+}
+
+/* Reset Geral e Fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Cabeçalho */
+.main-header {
+    background-color: var(--bg-card);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--accent-color);
+}
+
+#theme-toggle {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Container de Conteúdo e Grid Mobile-First */
+.content-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card-item {
+    background-color: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--accent-color);
+}
+
+/* Rodapé Convencional Ajustado à Base Original */
+.main-footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: var(--footer-text);
+    text-decoration: none;
+    margin: 0 0.75rem;
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    color: #94a3b8;
+}
+
+/* Media Query para Telas Maiores (Tablets e Desktops) */
+@media (min-width: 768px) {
+    .grid-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
