@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economia e Criatividade na Cozinha</title>
+    <style>
+        :root {
+            --primary-color: #6b1d2f; /* Vermelho Vinho */
+            --bg-color: #fcf8f8;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --text-light: #666666;
+            --accent-color: #e6be7e; /* Dourado para contraste */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-style: italic;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .recipes-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .recipes-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .recipe-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--primary-color);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .recipe-header h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .recipe-tag {
+            display: inline-block;
+            background-color: #f0e2e5;
+            color: var(--primary-color);
+            padding: 0.2rem 0.6rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-section {
+            margin-bottom: 1rem;
+        }
+
+        .recipe-section h3 {
+            font-size: 1rem;
+            color: var(--text-color);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul, ol {
+            padding-left: 1.2rem;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        li {
+            margin-bottom: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Economia e Criatividade na Cozinha</h1>
+        <p>Receitas de baixo custo e aproveitamento integral de alimentos</p>
+    </header>
+
+    <main>
+        <!-- GRID PRINCIPAL COM AS 6 RECEITAS INTEGRADAS E ALINHADAS -->
+        <div class="recipes-container">
+            
+            <!-- RECEITA 01 -->
+            <article class="recipe-card">
+                <div class="recipe-header">
+                    <h2>Arroz de Talos</h2>
+                    <span class="recipe-tag">Uso de Talos</span>
+                </div>
+                <div class="recipe-section">
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>1 fio de óleo</li>
+                        <li>1 colher (sopa) de alho picado</li>
+                        <li>Sal a gosto</li>
+                        <li>1 xícara (chá) de arroz</li>
+                        <li>Talos de salsa e de couve-manteiga a gosto</li>
+                        <li>2 xícaras (chá) de água</li>
+                    </ul>
+                </div>
+                <div class="recipe-section">
+                    <h3>Modo de Preparo</h3>
+                    <ol>
+                        <li>Em uma panela média, aqueça o óleo e refogue o alho picado, sal a gosto, arroz e os talos a gosto.</li>
+                        <li>Adicione água e tampe pela metade a panela até que a água seque e o arroz cozinhe e fique macio.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- RECEITA 02 -->
+            <article class="recipe-card">
+                <div class="recipe-header">
+                    <h2>Chips de Casca e Sementes</h2>
+                    <span class="recipe-tag">Snack Sustentável</span>
+                </div>
+                <div class="recipe-section">
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>Casca de 2 a 3 cenouras</li>
+                        <li>Casca de 2 a 3 batatas</li>
+                        <li>3 colheres (sopa) de semente de abóbora</li>
+                        <li>5 colheres (sopa) de azeite de oliva</li>
+                        <li>2 colheres (sopa) de cheiro-verde e cebolinha</li>
+                        <li>1/2 colher (chá) de sal</li>
+                        <li>1 pitada de pimenta-do-reino</li>
+                    </ul>
+                </div>
+                <div class="recipe-section">
+                    <h3>Modo de Preparo</h3>
+                    <ol>
+                        <li>Distribua em um tabuleiro as cascas e sementes higienizadas e regue com azeite.</li>
+                        <li>Adicione o cheiro-verde, a cebolinha, sal e pimenta-do-reino a gosto.</li>
+                        <li>Leve ao forno baixo por aproximadamente 15 minutos ou até que fiquem douradas. Sirva.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- RECEITA 03 -->
+            <article class="recipe-card">
+                <div class="recipe-header">
+                    <h2>Farofa de Casca de Melancia</h2>
+                    <span class="recipe-tag">Aproveitamento de Cascas</span>
+                </div>
+                <div class="recipe-section">
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>5 dentes de alho</li>
+                        <li>1/2 xícara (chá) de manteiga ou óleo</li>
+                        <li>6 xícaras (chá) de farinha de mandioca</li>
+                        <li>250g de casca de melancia (partes verdes)</li>
+                        <li>1 colher (sopa) de sal</li>
+                    </ul>
+                </div>
+                <div class="recipe-section">
+                    <h3>Modo de Preparo</h3>
+                    <ol>
+                        <li>Separe a casca verde da entrecasca da melancia e lave. Rale as cascas até ficarem em pedaços pequenos.</li>
+                        <li>Adicione em uma panela o alho e a manteiga e refogue.</li>
+                        <li>Adicione a farinha de mandioca, a casca de melancia e o sal. Misture e sirva.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- RECEITA 04 -->
+            <article class="recipe-card">
+                <div class="recipe-header">
+                    <h2>Bife de Casca de Banana</h2>
+                    <span class="recipe-tag">Criatividade na Cozinha</span>
+                </div>
+                <div class="recipe-section">
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>Casca de 6 bananas maduras</li>
+                        <li>3 dentes de alho</li>
+                        <li>1 xícara de farinha de rosca</li>
+                        <li>1 xícara de farinha de trigo</li>
+                        <li>2 ovos</li>
+                        <li>Sal a gosto</li>
+                    </ul>
+                </div>
+                <div class="recipe-section">
+                    <h3>Modo de Preparo</h3>
+                    <ol>
+                        <li>Higienize as cascas das bananas e lave em água corrente. Cortar as pontas. Retirar as cascas na forma de bifes, sem parti-las.</li>
+                        <li>Amassar o alho e colocar numa vasilha junto com o sal. Colocar as cascas das bananas nessa mistura para pegar sabor.</li>
+                        <li>Bater os ovos como se fosse omelete. Passar as cascas na farinha de trigo, nos ovos batidos e na farinha de rosca.</li>
+                        <li>Frite em óleo bem quente. Deixe dourar dos dois lados. Servir quente.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- RECEITA 05: BOLINHO DE ARROZ AMANHECIDO NUTRITIVO -->
+            <article class="recipe-card">
+                <div class="recipe-header">
+                    <h2>Bolinho de Arroz Amanhecido</h2>
+                    <span class="recipe-tag">Aproveitamento de Sobras</span>
+                </div>
+                <div class="recipe-section">
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>2 xícaras de arroz cozido amanhecido</li>
+                        <li>1 ovo</li>
+                        <li>1 cenoura pequena (ou abobrinha) ralada com a casca</li>
+                        <li>3 colheres (sopa) de farinha de trigo para dar o ponto</li>
+                        <li>Temperos a gosto (sal e o que tiver disponível)</li>
+                    </ul>
+                </div>
+                <div class="recipe-section">
+                    <h3>Modo de Preparo</h3>
+                    <ol>
+                        <li>Misture bem o arroz, o ovo e o legume ralado em uma bacia.</li>
+                        <li>Vá salpicando a farinha de trigo até que a massa fique firme o suficiente para moldar com uma colher.</li>
+                        <li>Em uma frigideira untada com um pouco de óleo, coloque colheradas da massa, achatando levemente para formar os bolinhos.</li>
+                        <li>Grelhe dos dois lados em fogo médio até que fiquem firmes e dourados.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- RECEITA 06: FAROFA DE CASCA DE ABÓBORA OU CENOURA -->
+            <article class="recipe-card">
+                <div class="recipe-header">
+                    <h2>Farofa de Casca de Abóbora ou Cenoura</h2>
+                    <span class="recipe-tag">Rica em Vitamina A</span>
+                </div>
+                <div class="recipe-section">
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>Cascas de 1 cenoura ou de 1 pedaço de abóbora raladas finas</li>
+                        <li>1 xícara de farinha de mandioca ou de milho</li>
+                        <li>1/2 cebola picada (se tiver)</li>
+                        <li>1 colher (sopa) de óleo ou margarina</li>
+                        <li>Sal a gosto</li>
+                    </ul>
+                </div>
+                <div class="recipe-section">
+                    <h3>Modo de Preparo</h3>
+                    <ol>
+                        <li>Aqueça o óleo em uma panela e doure a cebola.</li>
+                        <li>Adicione as cascas raladas e refogue por cerca de 3 minutos até murcharem um pouco.</li>
+                        <li>Junte a farinha de mandioca aos poucos, mexendo sempre em fogo baixo para não queimar.</li>
+                        <li>Tempere com sal e desligue quando a farinha estiver levemente tostada.</li>
+                    </ol>
+                </div>
+            </article>
+
+        </div> <!-- FECHAMENTO CORRETO DA LISTA DE RECEITAS -->
+    </main>
+</body>
+</html>
+
