@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucca Games MEI - Loja & Assistência Gamer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="#inicio" class="logo">
+        <span class="logo-icone" id="icone-negocio">🎮</span>
+        <div>
+          <strong id="nome-negocio">Lucca Games MEI</strong>
+          <small id="slogan-negocio">Jogos, Consoles & Acessórios Gamer</small>
+        </div>
+      </a>
+
+      <button class="btn-menu-mobile" id="btn-menu-mobile" aria-label="Abrir Menu">☰</button>
+
+      <nav class="menu-navegacao" id="menu-navegacao">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre o MEI</a>
+        <a href="#catalogo">Jogos & Produtos</a>
+        <a href="#orcamento">Orçamento</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-texto">
+        <span class="badge-mei" id="badge-categoria">Loja Gamer & Encomendas</span>
+        <h1 id="titulo-hero">Os melhores jogos e acessórios para elevar o nível da sua gameplay.</h1>
+        <p id="descricao-hero">
+          Mídias físicas, controles, headsets e manutenção preventiva de consoles com atendimento rápido direto pelo WhatsApp.
+        </p>
+        <div class="hero-botoes">
+          <a href="#catalogo" class="btn btn-primario">Ver Catálogo</a>
+          <a href="#orcamento" class="btn btn-secundario">Encomendar Jogo</a>
+        </div>
+      </div>
+
+      <div class="hero-card-destaque">
+        <div class="card-info-rapida">
+          <h3>Diferenciais da Lucca Games</h3>
+          <ul class="lista-diferenciais">
+            <li>✔ Jogos lacrados e seminovos testados</li>
+            <li>✔ Aceitamos seu jogo usado na troca</li>
+            <li>✔ Pagamento via PIX, Cartão ou Dinheiro</li>
+            <li>✔ Garantia e Nota Fiscal (MEI Regularizado)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="secao secao-clara">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <h2>Sobre a Lucca Games MEI</h2>
+        <p>De gamer para gamer: confiança, agilidade e preço justo.</p>
+      </div>
+
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <h3 id="subtitulo-sobre">Paixão por videogames e atendimento transparente</h3>
+          <p id="texto-sobre-1">
+            Fundada por Lucca, nossa loja MEI é especializada na venda de jogos para PlayStation, Xbox e Nintendo, além de periféricos e limpeza técnica de consoles.
+          </p>
+          <p id="texto-sobre-2">
+            Todos os produtos são revisados e entregues com garantia para você jogar sem preocupações.
+          </p>
+        </div>
+
+        <div class="sobre-dados-mei">
+          <div class="dado-box">
+            <span class="dado-numero" id="metrica-1-valor">+500</span>
+            <span class="dado-label" id="metrica-1-texto">Jogos Vendidos</span>
+          </div>
+          <div class="dado-box">
+            <span class="dado-numero" id="metrica-2-valor">100%</span>
+            <span class="dado-label" id="metrica-2-texto">Testados & Originais</span>
+          </div>
+          <div class="dado-box">
+            <span class="dado-numero" id="metrica-3-valor">5.0 ★</span>
+            <span class="dado-label" id="metrica-3-texto">Avaliação Gamer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogo" class="secao">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <h2>Catálogo Gamer</h2>
+        <p>Filtre por plataforma ou categoria e faça seu pedido pelo WhatsApp.</p>
+      </div>
+
+      <div class="filtros-container" id="filtros-catalogo"></div>
+      <div class="catalogo-grid" id="grid-catalogo"></div>
+    </div>
+  </section>
+
+  <section id="orcamento" class="secao secao-clara">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <h2>Encomenda ou Orçamento</h2>
+        <p>Procurando um título específico ou manutenção no console? Fale com o Lucca:</p>
+      </div>
+
+      <form id="form-orcamento" class="form-mei" novalidate>
+        <div class="form-grupo">
+          <label for="cliente-nome">Seu Nome Completo *</label>
+          <input type="text" id="cliente-nome" placeholder="Ex: Gabriel Santos" required>
+          <small class="mensagem-erro" id="erro-nome"></small>
+        </div>
+
+        <div class="form-linha">
+          <div class="form-grupo">
+            <label for="cliente-telefone">Seu WhatsApp / Telefone *</label>
+            <input type="tel" id="cliente-telefone" placeholder="(11) 99999-9999" required>
+            <small class="mensagem-erro" id="erro-telefone"></small>
+          </div>
+
+          <div class="form-grupo">
+            <label for="servico-escolhido">Jogo / Serviço de Interesse *</label>
+            <select id="servico-escolhido" required></select>
+          </div>
+        </div>
+
+        <div class="form-grupo">
+          <label for="cliente-mensagem">Detalhes do Pedido ou Console *</label>
+          <textarea id="cliente-mensagem" rows="4" placeholder="Ex: Modelo do console (PS5, Xbox Series, Switch), mídia física ou dúvida..." required></textarea>
+          <small class="mensagem-erro" id="erro-mensagem"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primario btn-bloco">
+          Enviar Pedido via WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer id="contato" class="rodape">
+    <div class="container rodape-grid">
+      <div>
+        <h4 id="rodape-nome">Lucca Games MEI</h4>
+        <p id="rodape-endereco">Rua dos Controles, 404 - Centro, São Paulo - SP</p>
+        <p id="rodape-horario">Seg a Sáb: 10h às 19h</p>
+      </div>
+      <div>
+        <h4>Informações Legais (MEI)</h4>
+        <p id="rodape-cnpj">CNPJ: 12.345.678/0001-90</p>
+        <p id="rodape-whatsapp">WhatsApp: (11) 98888-7777</p>
+      </div>
+    </div>
+    <div class="rodape-base">
+      <p>Desenvolvido por Lucca • Projeto Acadêmico de Desenvolvimento de Sistemas | Universidade Cruzeiro do Sul</p>
+    </div>
+  </footer>
+
+  <button class="btn-modo-aluno" id="btn-abrir-painel" title="Personalizar Tema">
+    🎨 Modo Aluno
+  </button>
+
+  <aside class="painel-aluno" id="painel-aluno">
+    <div class="painel-topo">
+      <strong>Customizador Gamer</strong>
+      <button id="btn-fechar-painel" aria-label="Fechar Painel">✕</button>
+    </div>
+    <p class="painel-dica">Alterne entre os perfis da loja do Lucca ou mude a cor principal:</p>
+
+    <label class="painel-label">1. Escolher Vitrine:</label>
+    <div class="presets-botoes">
+      <button type="button" class="btn-preset" data-preset="loja">🎮 Loja de Jogos</button>
+      <button type="button" class="btn-preset" data-preset="assistencia">🛠️ Manutenção</button>
+    </div>
+
+    <label class="painel-label" for="seletor-cor">2. Cor Principal (--cor-primaria):</label>
+    <input type="color" id="seletor-cor" value="#6d28d9">
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
